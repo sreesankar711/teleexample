@@ -23,8 +23,6 @@ logging.basicConfig(
 )
 
 
-TOKEN = os.environ["TELEGRAM_TOKEN"]
-
 # Define a few command handlers. These usually take the two arguments update and
 # context.
 # Best practice would be to replace context with an underscore,
@@ -85,7 +83,7 @@ async def unset(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 def main() -> None:
     """Run bot."""
     # Create the Application and pass it your bot's token.
-    application = Application.builder().token("TOKEN").build()
+    application = Application.builder().token("5924027589:AAEggCNb5Z5LHu9DVvu0YrC7A7yGs3EZqz0").build()
 
     # on different commands - answer in Telegram
     application.add_handler(CommandHandler(["start", "help"], start))
