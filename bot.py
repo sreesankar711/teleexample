@@ -1,4 +1,5 @@
 import logging
+import os
 
 from telegram import __version__ as TG_VER
 
@@ -21,6 +22,8 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
 
+
+TOKEN = os.environ["TELEGRAM_TOKEN"]
 
 # Define a few command handlers. These usually take the two arguments update and
 # context.
